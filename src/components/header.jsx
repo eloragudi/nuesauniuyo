@@ -10,7 +10,7 @@ export default function Header() {
                         <img src="/assets/images/logo.jpg" alt="" className="w-14 sm:w-16" />
                         <span className="font-semibold text-base sm:text-xl">NUESA UNIUYO</span>
                     </div>
-                    <ul className="flex items-center gap-3 sm:gap-5">
+                    <ul className="flex items-center gap-3 sm:gap-5 md:gap-8 text-sm sm:text-base md:text-lg">
                         <li className="">
                             <Link to='/'>Home</Link>
                         </li>
