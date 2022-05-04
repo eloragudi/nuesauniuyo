@@ -7,16 +7,16 @@ export default function Eventspage() {
         // url: '',
         // name: ''
     });
-    function getMemeImage() {
-        const memesArray = MemesData.data.memes;
-        const randomNumber = Math.floor(Math.random() * memesArray.length);
-        console.log(MemesData);
-        console.log(MemesData.data.memes[1]);
-        let newMeme = MemesData.data.memes[randomNumber];
-        setMeme(prevState => newMeme)
-        console.log(meme.url);
-        console.log(randomNumber);
-    }
+    // function getMemeImage() {
+    //     const memesArray = MemesData.data.memes;
+    //     const randomNumber = Math.floor(Math.random() * memesArray.length);
+    //     console.log(MemesData);
+    //     console.log(MemesData.data.memes[1]);
+    //     let newMeme = MemesData.data.memes[randomNumber];
+    //     setMeme(prevState => newMeme)
+    //     console.log(meme.url);
+    //     console.log(randomNumber);
+    // }
     return (
         <div className="">
             <section className="">
