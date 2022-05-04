@@ -7,6 +7,7 @@ import Historypage from './pages/history';
 import Eventspage from './pages/events';
 import Header from './components/header';
 import Footer from './components/footer';
+import EventDetails from './pages/events/[id]';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/' element={<Homepage />}></Route>
         <Route path='/history' element={<Historypage />}></Route>
         <Route path='/events' element={<Eventspage />}></Route>
+        <Route path='/events/:id' element={<EventDetails />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

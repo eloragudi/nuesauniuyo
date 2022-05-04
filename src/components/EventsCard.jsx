@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 export default function EventsCard() {
     return (
         <div className="">
@@ -7,9 +8,11 @@ export default function EventsCard() {
                     <img src="/assets/images/faculty.jpg" alt="" className="" />
                 </div>
                 <div className="card-body w-full sm:w-6/12 px-4 py-5">
+                            <Link to='/events/1'>                                
                     <h3 className="event-title font-semibold text-3xl mb-5">
                         Events title here
                     </h3>
+                            </Link>
                     <p className="text-lg">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Magni veniam delectus soluta placeat neque facere quo,
