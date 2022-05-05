@@ -1,5 +1,9 @@
 
 
+.note-container p {
+  margin-bottom: 15px;
+}
+
 .App {
   text-align: center;
 }

@@ -1,22 +1,14 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import EventsCard from "../components/EventsCard";
 
 
 export default function Eventspage() {
-    let [, setMeme] = React.useState({
-        // url: '',
-        // name: ''
-    });
-    // function getMemeImage() {
-    //     const memesArray = MemesData.data.memes;
-    //     const randomNumber = Math.floor(Math.random() * memesArray.length);
-    //     console.log(MemesData);
-    //     console.log(MemesData.data.memes[1]);
-    //     let newMeme = MemesData.data.memes[randomNumber];
-    //     setMeme(prevState => newMeme)
-    //     console.log(meme.url);
-    //     console.log(randomNumber);
-    // }
+    const [events, setEvents] = useState([])
+    useEffect(() => {        
+        fetch(`https://nuesauniuyo-api.herokuapp.com`)
+        .then(res => res.json())
+        .then(data => setEvents(data))
+    }, [])
     return (
         <div className="">
             <section className="">
@@ -31,8 +23,8 @@ export default function Eventspage() {
                     </div>
                     <div className="my-10">
                         {
-                            Array(6).fill(1).map((item, i) => {
-                                return (<EventsCard key={i} />)
+                            events.map((item, i) => {
+                                return (<EventsCard data={item} key={i} />)
                             })
                         }
                     </div>
