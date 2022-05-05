@@ -3,7 +3,7 @@ import EventsCard from "../components/EventsCard";
 
 
 export default function Eventspage() {
-    let [meme, setMeme] = React.useState({
+    let [, setMeme] = React.useState({
         // url: '',
         // name: ''
     });
